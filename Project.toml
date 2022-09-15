@@ -3,6 +3,10 @@ uuid = "0efa82ce-42e6-4314-b383-7c2ccfd5dbfe"
 authors = ["Isaia Nisoli nisoli@im.ufrj.br and contributors"]
 version = "0.1.0"
 
+[deps]
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
+
 [compat]
 julia = "1"
 
