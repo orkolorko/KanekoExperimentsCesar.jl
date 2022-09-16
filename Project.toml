@@ -8,6 +8,7 @@ CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
 Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
 
 [compat]
+CUDA = "3"
 julia = "1"
 
 [extras]
