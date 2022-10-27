@@ -1,10 +1,12 @@
 module KanekoExperimentsCesar
 
+export coupled_iteration
+
 f(a, x) = 1-a*x^2
 
 a = [1.85, 1.92]
 
-using CUDA
+#using CUDA
 
 almost_equal(x, y, epsilon) = abs(x-y)< epsilon ? true : false
 
@@ -48,7 +50,7 @@ function coupled_iteration(a, ϵ, x)
 
     z = sum(y)/length(y)
 
-    return (1-ϵ)*y.+ϵ*z
+    return (1-ϵ)*y .+ϵ*z
 end
 
 function coupled_orbit(a, ϵ, x, N)
